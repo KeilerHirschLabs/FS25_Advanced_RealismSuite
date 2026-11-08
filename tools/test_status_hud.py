@@ -6,7 +6,7 @@ from xml.etree import ElementTree
 from render_status_hud import (render_svg, snapshot,
                                latest_downloadable_release)
 
-ROOT = "https://github.com/KeilerHirsch/FS25_Advanced_RealismSuite"
+ROOT = "https://github.com/KeilerHirschLabs/FS25_Advanced_RealismSuite"
 REPORT = ROOT + "/blob/" + "a" * 40 + "/docs/acceptance/ars-fs25-gameplay.md"
 RELEASE_URL = ROOT + "/releases/tag/v0.2.0"
 RELEASE = {"html_url": RELEASE_URL, "tag_name": "v0.2.0", "draft": False,

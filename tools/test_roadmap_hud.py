@@ -5,7 +5,7 @@ import unittest
 from render_roadmap import has_verification_evidence, render_md, markdown_link_label, status
 from render_roadmap_hud import THEMES, card_metrics
 
-ROOT = "https://github.com/KeilerHirsch/FS25_Advanced_RealismSuite"
+ROOT = "https://github.com/KeilerHirschLabs/FS25_Advanced_RealismSuite"
 REPORT = ROOT + "/blob/" + "a" * 40 + "/docs/acceptance/ars-first-test.md"
 RELEASE_URL = ROOT + "/releases/tag/v0.2.0"
 PUBLISHED = {"html_url": RELEASE_URL, "tag_name": "v0.2.0", "draft": False,
@@ -37,7 +37,7 @@ class LiveHudMetricsTest(unittest.TestCase):
                 entry["title"] = title
                 entry["html_url"] = ROOT + "/issues/2"
                 rendered = render_md([entry])
-                self.assertIn("](https://github.com/KeilerHirsch/FS25_Advanced_RealismSuite/issues/2)", rendered)
+                self.assertIn("](https://github.com/KeilerHirschLabs/FS25_Advanced_RealismSuite/issues/2)", rendered)
                 self.assertIn(markdown_link_label(title), rendered)
                 self.assertNotIn("](https://evil.example/phish)", rendered)
                 self.assertNotIn("![t](https://evil.example/p.png)", rendered)
@@ -68,6 +68,12 @@ class LiveHudMetricsTest(unittest.TestCase):
         self.assertTrue(has_verification_evidence(verified))
         self.assertEqual(card_metrics({3: verified}, (3,)),
                          ("VERIFIED", 1, 1, 100))
+
+    def test_legacy_owner_commit_pinned_evidence_remains_valid(self):
+        historical = "https://github.com/KeilerHirsch/FS25_Advanced_RealismSuite"
+        report = historical + "/blob/" + "a" * 40 + "/docs/acceptance/old-report.md"
+        self.assertTrue(has_verification_evidence(
+            issue(3, ["status:verified"], evidence=report)))
 
     def test_self_link_is_not_an_acceptance_report(self):
         verified = issue(6, ["status:verified"], evidence=ROOT + "/issues/6")

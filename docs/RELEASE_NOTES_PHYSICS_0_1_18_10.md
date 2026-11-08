@@ -55,7 +55,7 @@ Die bisherige ARS-Physics-Beta-ZIP ersetzen und pro Spielstand nur eine ARS-Phys
 
 ## Release
 
-- **Version:** 0.1.18.9
-- **Download:** [FS25_Advanced_RealismSuite.zip](https://github.com/KeilerHirsch/FS25_Advanced_RealismSuite/releases/download/v0.1.18.10-physics-beta/FS25_Advanced_RealismSuite.zip)
-- **Release page:** [ARS Physics Beta v0.1.18.10](https://github.com/KeilerHirsch/FS25_Advanced_RealismSuite/releases/tag/v0.1.18.10-physics-beta)
+- **Version:** 0.1.18.10
+- **Download:** [FS25_Advanced_RealismSuite.zip](https://github.com/KeilerHirschLabs/FS25_Advanced_RealismSuite/releases/download/v0.1.18.10-physics-beta/FS25_Advanced_RealismSuite.zip)
+- **Release page:** [ARS Physics Beta v0.1.18.10](https://github.com/KeilerHirschLabs/FS25_Advanced_RealismSuite/releases/tag/v0.1.18.10-physics-beta)
 - **SHA-256:** 56C56FCD8AA12E4DB14443FF40A10B0A5C2A0D4972439701657EC1D7C85805B6

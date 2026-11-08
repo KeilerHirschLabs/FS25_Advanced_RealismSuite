@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-"""Reject ambiguous co-author identities in newly introduced Git commits.
+"""Reject ambiguous author and co-author identities in introduced Git commits.
 
-Only checks newly introduced commits, never rewrites history.
+Checks merge commits too; never rewrites history.
 """
 import json
 import os
@@ -40,12 +40,16 @@ def audit(event, payload):
     except subprocess.CalledProcessError:
         revision = new
         print("Previous commit unavailable after history rewrite; auditing all new commits")
-    commits = git("rev-list", "--no-merges", revision).splitlines()
+    commits = git("rev-list", revision).splitlines()
     violations = []
     for sha in commits:
-        bad = ambiguous_coauthors(git("log", "-1", "--format=%B", sha))
+        bad = set(ambiguous_coauthors(git("log", "-1", "--format=%B", sha)))
+        for role, fmt in (("author", "%ae"), ("committer", "%ce")):
+            email = git("log", "-1", f"--format={fmt}", sha).strip().casefold()
+            if email == "noreply@users.noreply.github.com":
+                bad.add(f"{role}: {email}")
         if bad:
-            violations.append((sha[:12], bad))
+            violations.append((sha[:12], sorted(bad)))
     return violations, len(commits)
 
 
@@ -56,12 +60,12 @@ def main():
     violations, checked = audit(event, payload)
     if violations:
         for sha, emails in violations:
-            print(f"ERROR {sha}: ambiguous Co-authored-by: " + ", ".join(emails),
+            print(f"ERROR {sha}: ambiguous commit attribution: " + ", ".join(emails),
                   file=sys.stderr)
         print("Use a verified email address or the contributor's exact GitHub "
               "privacy email with numeric user ID.", file=sys.stderr)
         return 1
-    print(f"PASS: {checked} introduced commit(s), no ambiguous co-authors")
+    print(f"PASS: {checked} introduced commit(s), no ambiguous identities")
     return 0
 
 

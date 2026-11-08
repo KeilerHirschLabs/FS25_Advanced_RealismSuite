@@ -57,9 +57,9 @@ def run():
     assert h.read_proofs({m["source"] for m in mods}) == {}
 
     # A roadmap 'VERIFIED' label alone cannot retire any whole external mod.
-    report = ("https://github.com/KeilerHirsch/FS25_Advanced_RealismSuite/"
+    report = ("https://github.com/KeilerHirschLabs/FS25_Advanced_RealismSuite/"
               "blob/" + "a"*40 + "/docs/acceptance/full-ads.md")
-    release_url = ("https://github.com/KeilerHirsch/FS25_Advanced_RealismSuite/"
+    release_url = ("https://github.com/KeilerHirschLabs/FS25_Advanced_RealismSuite/"
                    "releases/tag/v1.0.0")
     full_issue = issue(3, ["roadmap","status:released"],
                        "Verification evidence: " + report + "\n" +

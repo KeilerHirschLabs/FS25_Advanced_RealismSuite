@@ -41,6 +41,66 @@ class AttributionTests(unittest.TestCase):
 
 
     @patch("check_commit_attribution.git")
+    def test_merge_commit_coauthor_is_scanned(self, mocked_git):
+        def fake_git(*args):
+            if args[0] == "cat-file":
+                return ""
+            if args[0] == "rev-list":
+                self.assertEqual(args, ("rev-list", "a" * 40 + ".." + "b" * 40))
+                return "c673ee83e0a2"
+            if args[0] == "log":
+                if "--format=%B" in args:
+                    return "Co-authored-by: KeilerHirsch <noreply@users.noreply.github.com>"
+                return "259172531+KeilerHirsch@users.noreply.github.com"
+            raise AssertionError(args)
+        mocked_git.side_effect = fake_git
+        violations, scanned = audit("push", {
+            "before": "a" * 40, "after": "b" * 40})
+        self.assertEqual(scanned, 1)
+        self.assertEqual(violations, [
+            ("c673ee83e0a2", ["noreply@users.noreply.github.com"])])
+
+    @patch("check_commit_attribution.git")
+    def test_generic_author_rejected_but_github_web_committer_allowed(self, mocked_git):
+        def fake_git(*args):
+            if args[0] == "cat-file":
+                return ""
+            if args[0] == "rev-list":
+                return "abcde12345"
+            if args[0] == "log":
+                if "--format=%ae" in args:
+                    return "noreply@users.noreply.github.com"
+                if "--format=%ce" in args:
+                    return "noreply@github.com"
+                return "Normal commit message"
+            raise AssertionError(args)
+        mocked_git.side_effect = fake_git
+        violations, scanned = audit("push", {
+            "before": "a" * 40, "after": "b" * 40})
+        self.assertEqual(scanned, 1)
+        self.assertEqual(violations, [
+            ("abcde12345", ["author: noreply@users.noreply.github.com"])])
+
+    @patch("check_commit_attribution.git")
+    def test_normal_web_flow_committer_is_not_mistaken_for_foreign_user(self, mocked_git):
+        def fake_git(*args):
+            if args[0] == "cat-file":
+                return ""
+            if args[0] == "rev-list":
+                return "abcde12345"
+            if args[0] == "log":
+                if "--format=%ae" in args:
+                    return "259172531+KeilerHirsch@users.noreply.github.com"
+                if "--format=%ce" in args:
+                    return "noreply@github.com"
+                return "Normal commit message"
+            raise AssertionError(args)
+        mocked_git.side_effect = fake_git
+        violations, scanned = audit("push", {
+            "before": "a" * 40, "after": "b" * 40})
+        self.assertEqual((violations, scanned), ([], 1))
+
+    @patch("check_commit_attribution.git")
     def test_history_rewrite_scans_entire_new_history(self, mocked_git):
         def fake_git(*args):
             if args[0] == "cat-file":

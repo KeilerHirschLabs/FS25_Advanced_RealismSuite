@@ -14,11 +14,13 @@
 
 <sub>Concept artwork — not an in-game screenshot.</sub>
 
+**Available now:** [ARS Physics Beta v0.1.18.10](https://github.com/KeilerHirschLabs/FS25_Advanced_RealismSuite/releases/tag/v0.1.18.10-physics-beta). **The full ARS suite is still in development.**
+
 ## Live Development
 
 <a href="docs/ROADMAP.md"><img src="docs/assets/status-live.svg" alt="Automatically updated ARS development status derived from public GitHub Issues and Releases" width="100%"></a>
 
-<sub>Automatically updated from public GitHub Issues and Releases. [Full roadmap](docs/ROADMAP.md) · [GitHub activity](https://github.com/KeilerHirsch/FS25_Advanced_RealismSuite/issues?q=is%3Aissue+label%3Aroadmap)</sub>
+<sub>Automatically updated from public GitHub Issues and Releases. [Full roadmap](docs/ROADMAP.md) · [GitHub activity](https://github.com/KeilerHirschLabs/FS25_Advanced_RealismSuite/issues?q=is%3Aissue+label%3Aroadmap)</sub>
 
 ## The Mission
 
@@ -42,9 +44,9 @@ My long-term vision goes further: to gradually connect soil management, crop pro
 
 ## Explore ARS
 
-[Features](docs/FEATURES.md) · [Live Development](#live-development) · [Roadmap](docs/ROADMAP.md) · [Community](https://github.com/KeilerHirsch/FS25_Advanced_RealismSuite/discussions) · [Credits](docs/COMMUNITY_INSPIRATIONS.md)
+[Features](docs/FEATURES.md) · [Live Development](#live-development) · [Roadmap](docs/ROADMAP.md) · [Community](https://github.com/KeilerHirschLabs/FS25_Advanced_RealismSuite/discussions) · [Credits](docs/COMMUNITY_INSPIRATIONS.md)
 
-<sub>[Changelog](CHANGELOG.md) · [Wiki](https://github.com/KeilerHirsch/FS25_Advanced_RealismSuite/wiki) · [Releases](https://github.com/KeilerHirsch/FS25_Advanced_RealismSuite/releases)</sub>
+<sub>[Changelog](CHANGELOG.md) · [Wiki](https://github.com/KeilerHirschLabs/FS25_Advanced_RealismSuite/wiki) · [Releases](https://github.com/KeilerHirschLabs/FS25_Advanced_RealismSuite/releases)</sub>
 
 ---
 
