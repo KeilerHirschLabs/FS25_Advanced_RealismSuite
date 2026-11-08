@@ -82,6 +82,25 @@ class AttributionTests(unittest.TestCase):
             ("abcde12345", ["author: noreply@users.noreply.github.com"])])
 
     @patch("check_commit_attribution.git")
+    def test_github_system_address_rejected_for_author_only(self, mocked_git):
+        def fake_git(*args):
+            if args[0] == "cat-file":
+                return ""
+            if args[0] == "rev-list":
+                return "abcde12345"
+            if args[0] == "log":
+                if "--format=%ae" in args or "--format=%ce" in args:
+                    return "noreply@github.com"
+                return "Normal commit message"
+            raise AssertionError(args)
+        mocked_git.side_effect = fake_git
+        violations, scanned = audit("push", {
+            "before": "a" * 40, "after": "b" * 40})
+        self.assertEqual(scanned, 1)
+        self.assertEqual(violations, [
+            ("abcde12345", ["author: noreply@github.com"])])
+
+    @patch("check_commit_attribution.git")
     def test_normal_web_flow_committer_is_not_mistaken_for_foreign_user(self, mocked_git):
         def fake_git(*args):
             if args[0] == "cat-file":

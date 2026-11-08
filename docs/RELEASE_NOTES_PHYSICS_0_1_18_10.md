@@ -8,7 +8,7 @@
 
 Standalone Farming Simulator 25 physics beta built directly on native GIANTS vehicle physics. This release is the physics module only, not the complete ARS suite.
 
-## 0.1.18.10 — Handling hotfix (Pre-release)
+## 0.1.18.10 — Handling hotfix
 - Reduced **additional ARS rolling resistance on plowed soil** from `1.080` to `1.015` for better playability with heavily loaded tractor/trailer combinations. This is an experimental tuning value; no speed guarantee is claimed.
 - **Unchanged:** native GIANTS sinking, rim limits, load/tyre/crawler weighting, displacement, grip, draft and engine torque.
 - Stable archive name: `FS25_Advanced_RealismSuite.zip`. On the first migration, **remove every older `FS25_ARS_Physics_Beta_*.zip` from your mods folder**. Later downloads overwrite the same file automatically.

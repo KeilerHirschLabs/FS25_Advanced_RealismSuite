@@ -46,7 +46,9 @@ def audit(event, payload):
         bad = set(ambiguous_coauthors(git("log", "-1", "--format=%B", sha)))
         for role, fmt in (("author", "%ae"), ("committer", "%ce")):
             email = git("log", "-1", f"--format={fmt}", sha).strip().casefold()
-            if email == "noreply@users.noreply.github.com":
+            if email == "noreply@users.noreply.github.com" or (
+                role == "author" and email == "noreply@github.com"
+            ):
                 bad.add(f"{role}: {email}")
         if bad:
             violations.append((sha[:12], sorted(bad)))
