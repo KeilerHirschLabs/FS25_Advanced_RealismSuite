@@ -92,6 +92,6 @@ Diese Vorbilder fließen in **spätere Entwicklungsideen** ein, etwa Gebrauchtma
 
 Danke auch an alle, die Fehler melden, Ideen einbringen, Multiplayer testen und Wissen teilen. Mein Dank gilt ebenso **GIANTS Software** für den Landwirtschafts-Simulator und die Modding-Dokumentation im GDN.
 
-Fehlt eine Nennung oder ist sie nicht korrekt? Bitte [in den Diskussionen melden](https://github.com/KeilerHirsch/FS25_Advanced_RealismSuite/discussions). Ich korrigiere das gerne.
+Fehlt eine Nennung oder ist sie nicht korrekt? Bitte [in den Diskussionen melden](https://github.com/KeilerHirschLabs/FS25_Advanced_RealismSuite/discussions). Ich korrigiere das gerne.
 
 **ARS entwickle ich eigenständig. Diese Danksagung ist weder eine offizielle Empfehlung durch andere Entwickler noch eine Erlaubnis zur Übernahme ihrer Inhalte.**

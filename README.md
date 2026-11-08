@@ -14,11 +14,13 @@
 
 <sub>Konzeptbild — kein Screenshot aus dem Spiel.</sub>
 
+**Jetzt verfügbar:** [ARS Physics Beta v0.1.18.10](https://github.com/KeilerHirschLabs/FS25_Advanced_RealismSuite/releases/tag/v0.1.18.10-physics-beta). **Die vollständige ARS befindet sich weiterhin in Entwicklung.**
+
 ## Live-Entwicklung
 
-<a href="docs/ROADMAP.md"><img src="docs/assets/status-live.svg?refresh=20261030" alt="Automatische ARS-Entwicklungsanzeige aus GitHub-Issues und Releases" width="100%"></a>
+<a href="docs/ROADMAP.md"><img src="docs/assets/status-live.svg" alt="Automatische ARS-Entwicklungsanzeige aus GitHub-Issues und Releases" width="100%"></a>
 
-<sub>Automatisch anhand öffentlicher GitHub-Issues und Releases aktualisiert. [Vollständige Roadmap](docs/ROADMAP.md) · [Aktivitäten auf GitHub](https://github.com/KeilerHirsch/FS25_Advanced_RealismSuite/issues?q=is%3Aissue+label%3Aroadmap)</sub>
+<sub>Automatisch anhand öffentlicher GitHub-Issues und Releases aktualisiert. [Vollständige Roadmap](docs/ROADMAP.md) · [Aktivitäten auf GitHub](https://github.com/KeilerHirschLabs/FS25_Advanced_RealismSuite/issues?q=is%3Aissue+label%3Aroadmap)</sub>
 
 ## Die Mission
 
@@ -42,9 +44,9 @@ Meine langfristige Vision geht darüber hinaus: Später sollen auch Bodenbearbei
 
 ## ARS entdecken
 
-[Funktionen](docs/FEATURES.md) · [Live-Entwicklung](#live-entwicklung) · [Roadmap](docs/ROADMAP.md) · [Community](https://github.com/KeilerHirsch/FS25_Advanced_RealismSuite/discussions) · [Mitwirkende](docs/COMMUNITY_INSPIRATIONS.md)
+[Funktionen](docs/FEATURES.md) · [Live-Entwicklung](#live-entwicklung) · [Roadmap](docs/ROADMAP.md) · [Community](https://github.com/KeilerHirschLabs/FS25_Advanced_RealismSuite/discussions) · [Mitwirkende](docs/COMMUNITY_INSPIRATIONS.md)
 
-<sub>[Änderungsprotokoll](CHANGELOG.md) · [Wiki](https://github.com/KeilerHirsch/FS25_Advanced_RealismSuite/wiki) · [Veröffentlichungen](https://github.com/KeilerHirsch/FS25_Advanced_RealismSuite/releases)</sub>
+<sub>[Änderungsprotokoll](CHANGELOG.md) · [Wiki](https://github.com/KeilerHirschLabs/FS25_Advanced_RealismSuite/wiki) · [Veröffentlichungen](https://github.com/KeilerHirschLabs/FS25_Advanced_RealismSuite/releases)</sub>
 
 ---
 

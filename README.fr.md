@@ -14,11 +14,13 @@
 
 <sub>Illustration conceptuelle — ce n'est pas une capture d'écran du jeu.</sub>
 
+**Disponible actuellement :** [ARS Physics Beta v0.1.18.10](https://github.com/KeilerHirschLabs/FS25_Advanced_RealismSuite/releases/tag/v0.1.18.10-physics-beta). **La suite ARS complète est toujours en développement.**
+
 ## Développement en cours
 
 <a href="docs/ROADMAP.md"><img src="docs/assets/status-live.svg" alt="Suivi automatique du développement d'ARS à partir de GitHub" width="100%"></a>
 
-<sub>Actualisé automatiquement à partir des tickets GitHub et des versions publiées. [Feuille de route complète](docs/ROADMAP.md) · [Activité GitHub](https://github.com/KeilerHirsch/FS25_Advanced_RealismSuite/issues?q=is%3Aissue+label%3Aroadmap)</sub>
+<sub>Actualisé automatiquement à partir des tickets GitHub et des versions publiées. [Feuille de route complète](docs/ROADMAP.md) · [Activité GitHub](https://github.com/KeilerHirschLabs/FS25_Advanced_RealismSuite/issues?q=is%3Aissue+label%3Aroadmap)</sub>
 
 ## La mission
 
@@ -42,9 +44,9 @@ Ma vision à long terme va plus loin : relier progressivement le travail du sol,
 
 ## Découvrir ARS
 
-[Fonctionnalités](docs/FEATURES.md) · [Développement en cours](#développement-en-cours) · [Roadmap](docs/ROADMAP.md) · [Communauté](https://github.com/KeilerHirsch/FS25_Advanced_RealismSuite/discussions) · [Crédits](docs/COMMUNITY_INSPIRATIONS.md)
+[Fonctionnalités](docs/FEATURES.md) · [Développement en cours](#développement-en-cours) · [Roadmap](docs/ROADMAP.md) · [Communauté](https://github.com/KeilerHirschLabs/FS25_Advanced_RealismSuite/discussions) · [Crédits](docs/COMMUNITY_INSPIRATIONS.md)
 
-<sub>[Journal des modifications](CHANGELOG.md) · [Wiki](https://github.com/KeilerHirsch/FS25_Advanced_RealismSuite/wiki) · [Versions publiées](https://github.com/KeilerHirsch/FS25_Advanced_RealismSuite/releases)</sub>
+<sub>[Journal des modifications](CHANGELOG.md) · [Wiki](https://github.com/KeilerHirschLabs/FS25_Advanced_RealismSuite/wiki) · [Versions publiées](https://github.com/KeilerHirschLabs/FS25_Advanced_RealismSuite/releases)</sub>
 
 ---
 

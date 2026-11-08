@@ -1,7 +1,7 @@
 <!-- Generated from GitHub Issues by tools/render_roadmap.py. Do not edit manually. -->
 # ARS public roadmap
 
-This page and the [visual dashboard](assets/roadmap.svg) are generated from [roadmap-labeled GitHub issues](https://github.com/KeilerHirsch/FS25_Advanced_RealismSuite/issues?q=is%3Aissue+label%3Aroadmap). Internal research and planning topics are not shipped features.
+This page and the [visual dashboard](assets/roadmap.svg) are generated from [roadmap-labeled GitHub issues](https://github.com/KeilerHirschLabs/FS25_Advanced_RealismSuite/issues?q=is%3Aissue+label%3Aroadmap). Internal research and planning topics are not shipped features.
 
 **Status contract:** Commits, PR merges and closed issues do not automatically mean verified or released. The verified status needs in-game acceptance evidence; released means a publicly shipped build. No release dates are promised.
 
@@ -42,4 +42,4 @@ This page and the [visual dashboard](assets/roadmap.svg) are generated from [roa
 - Roadmap Issue changes, GitHub Release events and periodic checks refresh the SVG phase dashboard, cinematic roadmap image, compact live-status HUD and this text page via GitHub Actions. PR runs verify only and never publish.
 - Detailed internal research remains separate; the public board tracks outcome-focused epics.
 
-[Public discussion](https://github.com/KeilerHirsch/FS25_Advanced_RealismSuite/discussions/2) · [Project home](../README.md)
+[Public discussion](https://github.com/KeilerHirschLabs/FS25_Advanced_RealismSuite/discussions/2) · [Project home](../README.md)
