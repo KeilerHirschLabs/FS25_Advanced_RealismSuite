@@ -44,7 +44,7 @@ Meine langfristige Vision geht darüber hinaus: Später sollen auch Bodenbearbei
 
 ## ARS entdecken
 
-[Funktionen](docs/FEATURES.md) · [Live-Entwicklung](#live-entwicklung) · [Roadmap](docs/ROADMAP.md) · [Community](https://github.com/KeilerHirschLabs/FS25_Advanced_RealismSuite/discussions) · [Mitwirkende](docs/COMMUNITY_INSPIRATIONS.md)
+[Funktionen](docs/FEATURES.md) · [Live-Entwicklung](#live-entwicklung) · [Roadmap](docs/ROADMAP.md) · [Entwicklungsgeschichte](docs/DEVELOPMENT_HISTORY.md) · [Community](https://github.com/KeilerHirschLabs/FS25_Advanced_RealismSuite/discussions) · [Mitwirkende](docs/COMMUNITY_INSPIRATIONS.md)
 
 <sub>[Änderungsprotokoll](CHANGELOG.md) · [Wiki](https://github.com/KeilerHirschLabs/FS25_Advanced_RealismSuite/wiki) · [Veröffentlichungen](https://github.com/KeilerHirschLabs/FS25_Advanced_RealismSuite/releases)</sub>
 

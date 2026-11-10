@@ -44,7 +44,7 @@ My long-term vision goes further: to gradually connect soil management, crop pro
 
 ## Explore ARS
 
-[Features](docs/FEATURES.md) · [Live Development](#live-development) · [Roadmap](docs/ROADMAP.md) · [Community](https://github.com/KeilerHirschLabs/FS25_Advanced_RealismSuite/discussions) · [Credits](docs/COMMUNITY_INSPIRATIONS.md)
+[Features](docs/FEATURES.md) · [Live Development](#live-development) · [Roadmap](docs/ROADMAP.md) · [Development history](docs/DEVELOPMENT_HISTORY.md) · [Community](https://github.com/KeilerHirschLabs/FS25_Advanced_RealismSuite/discussions) · [Credits](docs/COMMUNITY_INSPIRATIONS.md)
 
 <sub>[Changelog](CHANGELOG.md) · [Wiki](https://github.com/KeilerHirschLabs/FS25_Advanced_RealismSuite/wiki) · [Releases](https://github.com/KeilerHirschLabs/FS25_Advanced_RealismSuite/releases)</sub>
 

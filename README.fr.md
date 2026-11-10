@@ -44,7 +44,7 @@ Ma vision à long terme va plus loin : relier progressivement le travail du sol,
 
 ## Découvrir ARS
 
-[Fonctionnalités](docs/FEATURES.md) · [Développement en cours](#développement-en-cours) · [Roadmap](docs/ROADMAP.md) · [Communauté](https://github.com/KeilerHirschLabs/FS25_Advanced_RealismSuite/discussions) · [Crédits](docs/COMMUNITY_INSPIRATIONS.md)
+[Fonctionnalités](docs/FEATURES.md) · [Développement en cours](#développement-en-cours) · [Roadmap](docs/ROADMAP.md) · [Histoire du développement](docs/DEVELOPMENT_HISTORY.md) · [Communauté](https://github.com/KeilerHirschLabs/FS25_Advanced_RealismSuite/discussions) · [Crédits](docs/COMMUNITY_INSPIRATIONS.md)
 
 <sub>[Journal des modifications](CHANGELOG.md) · [Wiki](https://github.com/KeilerHirschLabs/FS25_Advanced_RealismSuite/wiki) · [Versions publiées](https://github.com/KeilerHirschLabs/FS25_Advanced_RealismSuite/releases)</sub>
 
